@@ -28,18 +28,18 @@
         <!-- header Start -->
         <header class="header">
             <div class="container">
-                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="測試分支測試測試分支測試" tabindex="2">:::</a>
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
                 <!-- navigation End -->
                 <h1>
-                    <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+                    <a href="index.htm"><img src="images/logo.png" alt="測試" /></a>
                 </h1>
                 <div class="step">
                     <ul>
-                        <li class="active">
+                        <li>
                             <div class="icon"><span>1</span></div>
                             <span>Install App</span>
                         </li>
-                        <li>
+                        <li class="active">
                             <div class="icon"><span>2</span></div>
                             <span>Reg/Auth Test</span>
                         </li>
@@ -57,36 +57,38 @@
             <div class="container">
                 <div class="hero_block">
                     <div class="info">
-                        <h2 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".1s">Demonstration Site</h2>
-                        <div class="step_info wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
-                            <div class="num">01</div><span>Install Apps</span>
+                        <h2>Demonstration Site</h2>
+                        <div class="step_info">
+                            <div class="num">02</div><span>Reg/Auth Test</span>
                         </div>
-                        <p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">Scan QRCode with your phone or Click it to install on your phone</p>
-                        <div class="qrcode wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".8s">
-                            <div class="ios">
-                                <div class="white">
-                                    <span>ios</span>
-                                    <img src="images/qrcode_ios.jpg" alt="">
-                                </div>
-                                <!-- 點選開iframe -->
-                                <a data-fancybox data-type="iframe" data-src="guideline_ios.htm" href="javascript:;">Installation Guide</a>
+                        <div class="form_block">
+                            <div class="col">
+                                <form>
+                                    <div class="form_grp">
+                                        <input type="text" id="username" placeholder="username">
+                                    </div>
+                                    <div class="btn_grp">
+                                        <a href="#">Registration</a>
+                                        <a href="#">Authentication(Push)</a>
+                                        <a href="#">Authentication(QRCode)</a>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="android">
-                                <div class="white">
-                                    <span>android</span>
-                                    <img src="images/qrcode_android.jpg" alt="">
-                                </div>
-                                <!-- 點選開iframe -->
-                                <a data-fancybox data-type="iframe" data-src="guideline_android.htm" href="javascript:;">Installation Guide</a>
+                            <div class="col">
+                                <form>
+                                    <div class="form_grp">
+                                        <input type="text" id="transaction body" placeholder="transaction body">
+                                    </div>
+                                    <div class="btn_grp">
+                                        <a href="#">Transaction(Push)</a>
+                                        <a href="#">Transaction(QRCode)</a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="hero_image wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".7s">
-                        <img src="images/hero_image.png" alt="">
-                        <div class="arc"></div>
                     </div>
                     <div class="btn_block">
-                        <a href="index_02.htm">NEXT : Reg/Auth Test → </a>
+                        <a href="index_01.htm">← BACK : Install Apps </a>
                     </div>
                 </div>
             </div>
@@ -106,8 +108,4 @@
     <!-- wow -->
     <script src="js/wow.min.js"></script>
     <script>
-    new WOW().init();
-    </script>
-</body>
-
-</html>
+    new WOW().init(); < /body> < /html >
