@@ -1,0 +1,85 @@
+@import url('../swiper-bundle.min.css');
+
+@keyframes lightBoxOpen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lightBoxClose {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.listBox {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    margin: 10px;
+    .pic {
+      width: 100px;
+      background: #000;
+      padding-top: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.lightBoxOpen {
+  overflow: hidden;
+  .out {
+    display: flex;
+    animation: lightBoxOpen 0.3s linear;
+    animation-fill-mode: forwards;
+  }
+}
+.lightBoxClose {
+  .out {
+    animation: lightBoxClose 0.3s linear;
+    animation-fill-mode: forwards;
+  }
+}
+.out {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: none;
+  background: rgba(#000, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.lightBoxOverLayer {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+.lightBox {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  .pic {
+    width: 60%;
+    overflow: hidden;
+    line-height: 0;
+    .swiper-slide {
+      background: #000;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .txt {
+    width: 40%;
+    .swiper-slide {
+      background: #fff;
+    }
+  }
+}
