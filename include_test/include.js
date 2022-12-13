@@ -9,3 +9,5 @@ let headContent = `
 </div>
 `;
 document.write(headContent);
+console.log();
+console.log();
