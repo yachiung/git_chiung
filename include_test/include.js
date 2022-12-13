@@ -11,3 +11,5 @@ let headContent = `
 document.write(headContent);
 console.log();
 console.log();
+console.log();
+console.log();
